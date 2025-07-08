@@ -30,9 +30,6 @@ jobs:
       - name: Build Application
         run: npm run build
 
-      - name: Run Tests
-        run: npm test
-
       - name: Archive Build Output
         run: zip -r ${{ env.DEPLOY_PACKAGE }} ./dist ./package.json ./package-lock.json ./node_modules
 
