@@ -13,6 +13,7 @@ const Home = () => {
       <div style={{ textAlign: "left" }}>
         <img src={mePic} alt="Logo" width="100" />
       </div>
+
       <div style={{ marginBottom: "200px" }}>
         <h1 style={{fontSize: "80px" }}>Circuits By Carl</h1>
         <img src={introPic} alt="Logo" width="400" />
