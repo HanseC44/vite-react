@@ -1,31 +1,47 @@
-import { useState } from 'react'
-import touchPic from './assets/touch.jpg'
-import test1 from './assets/test1.png'
+import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import introPic from './assets/SenProj.jpg';
+import boardsPic from './assets/boards.jpg';
+import mePic from './assets/me.jpg';
+import FreshPage from './pages/FreshPage';
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+const Home = () => {
+  const navigate = useNavigate();
 
   return (
     <>
+      <div style={{ textAlign: "left" }}>
+        <img src={mePic} alt="Logo" width="100" />
+      </div>
+      <div style={{ marginBottom: "200px" }}>
+        <h1 style={{fontSize: "80px" }}>Circuits By Carl</h1>
+        <img src={introPic} alt="Logo" width="400" />
+        <h1 style={{ fontSize: "20px", color: "blue" }}>Design and implimentation: an in depth look at music reated topics</h1>
+      </div>
+
       <div>
-        <h1 style={{ fontSize: "20px" }}>Hello, world!</h1>
-        <img src={touchPic} alt="Logo" width="400" />
+        <h1>E_Guitar</h1>
+        <img src={boardsPic} alt="Logo" width="600" />
       </div>
-            <div>
-        <h1>Development Board</h1>
-        <img src={test1} alt="Logo" width="600" />
-      </div>
+
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+        <button onClick={() => navigate('/fresh')}>
+          See Project
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
       </div>
     </>
   )
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/fresh" element={<FreshPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App
