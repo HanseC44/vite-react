@@ -4,6 +4,8 @@ import mcuBottomPic from '../assets/mcuBottom.png';
 import dCapsPic from '../assets/dCaps.png';
 import linRegPic from '../assets/linReg.png';
 import chargePic from '../assets/charge.png';
+import audioAmpPic from '../assets/audioAmp.png';
+import pcbPic from '../assets/pcb.png';
 
 const FreshPage = () => {
   const navigate = useNavigate();
@@ -43,12 +45,24 @@ const FreshPage = () => {
       <p>the audio amplifier.</p>
     </div>
 
+    <div style={{ marginBottom: "100px" }}>
+      <p>Audio Amplifiers</p>
+      <img src={audioAmpPic} alt="Logo" width="800" />
+      <p>Texas instrument Opa134 opamps were used but set up wrong.</p>
+    </div>
+
+    <div style={{ marginBottom: "100px" }}>
+      <p>PCB Layout</p>
+      <img src={pcbPic} alt="Logo" width="800" />
+      <p>PCB layout was designed in KiCad</p>
+    </div>
+
     <div className="card">
       <button onClick={() => navigate('/')}>
         Go Back to Home
       </button>
     </div>
-  </>
+    </>
   );
 };
 
