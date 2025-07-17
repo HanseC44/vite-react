@@ -30,19 +30,18 @@ const Home = () => {
         </button>
       </div>
 
-      <div style={{ marginBottom: "50px" }}>
-        <h1 style={{fontSize: "80px" }}>Circuits By Carl</h1>
+      <div style={{ marginBottom: "100px" }}>
+        <h1 style={{color: "green", fontSize: "80px" }}>Circuits By Carl</h1>
         <img src={introPic} alt="Logo" width="800" />
-        <h1 style={{ fontSize: "20px", color: "blue" }}>Design and implimentation: an in depth look at music reated topics</h1>
       </div>
 
       <div>
-        <h1>E_Guitar</h1>
+        <h1 style={{color: "green", fontSize: "40px" }}>E_Guitar</h1>
         <img src={boardsPic} alt="Logo" width="600" />
       </div>
 
       <div className="card">
-        <button onClick={() => navigate('/fresh')}>
+        <button onClick={() => navigate('/fresh')}style={{ marginLeft: "30px", backgroundColor: "blue", color: "white", padding: "5px 10px", border: "none", borderRadius: "5px"}}>
           See Project
         </button>
       </div>

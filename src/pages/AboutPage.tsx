@@ -10,7 +10,7 @@ const AboutPage = () => {
       <p> 
         Hi, I'm Carl! I'm an Electrical and Computer Engineer with experience in C, Python, and embedded systems.
         I’ve recently started working with React and TypeScript to build modern web apps. 
-        I love music technology, guitar electronics, and building projects that blend hardware and software.
+        I love music technology, guitar electronics, and building projects that blend hardware and software. My 
       </p> 
       <p>
         My recent work includes designing circuit boards for audio applications and developing interactive web interfaces 
@@ -25,7 +25,7 @@ const AboutPage = () => {
       </p>
     </div>
     <div className="card">
-      <button onClick={() => navigate('/')}>
+      <button onClick={() => navigate('/')}style={{ marginLeft: "30px", backgroundColor: "blue", color: "white", padding: "5px 10px", border: "none", borderRadius: "5px"}}>
         Go Back to Home
       </button>
     </div>
