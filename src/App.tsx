@@ -22,6 +22,9 @@ const Home = () => {
 
   return (
     <>
+      <a href="https://github.com/HanseC44/vite-react" target="_blank" rel="noopener noreferrer">
+        View on GitHub
+      </a>
       <div style={{ display: "flex", alignItems: "center", textAlign: "left" }}>
         <img src={mePic} alt="Logo" width="100" />
         <p style={{ marginLeft: "50px" }}>    Kbarisland@gmail.com</p>
