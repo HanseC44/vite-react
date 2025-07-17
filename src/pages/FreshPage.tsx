@@ -16,8 +16,8 @@ const FreshPage = () => {
       <h1>Circuit Design:</h1>
       <p>MCU Top</p>
       <img src={mcuTopPic} alt="Logo" width="800" />
-      <p>The microcontroller being used is an STM32H723ZG. This shows the VDD_MCU connection, the clock, </p>
-      <p>The ST-Link headers, The Dac pins and some of the GPIO pins used for touch sensing</p>
+      <p>The microcontroller being used is an STM32H723ZG. This shows the VDD_MCU connection, the clock, 
+         The ST-Link headers, The Dac pins and some of the GPIO pins used for touch sensing</p>
     </div>
 
     <div style={{ marginBottom: "100px" }}>
@@ -41,8 +41,8 @@ const FreshPage = () => {
     <div style={{ marginBottom: "100px" }}>
       <p>Charge Circuit</p>
       <img src={chargePic} alt="Logo" width="800" />
-      <p>This circuit is responsible for charging the LIPO battery from USB type B and boosting the 3.3 volts to 5 volts for </p>
-      <p>the audio amplifier.</p>
+      <p>This circuit is responsible for charging the LIPO battery from USB type B and boosting the 3.3 volts to 5 volts 
+         for the audio amplifier. </p>
     </div>
 
     <div style={{ marginBottom: "100px" }}>
