@@ -3,8 +3,10 @@ import { useEffect } from 'react';
 import introPic from './assets/SenProj.jpg';
 import boardsPic from './assets/boards.jpg';
 import mePic from './assets/me.jpg';
+import prePic from './assets/pre.jpg';
 import FreshPage from './pages/FreshPage';
 import AboutPage from './pages/AboutPage';
+import PrePage from './pages/PrePage';
 import './App.css'
 
 function ScrollToTop() {
@@ -39,12 +41,23 @@ const Home = () => {
       </div>
 
       <div>
-        <h1 style={{color: "green", fontSize: "40px" }}>E_Guitar</h1>
+        <h1 style={{color: "green", fontSize: "50px" }}>E_Guitar</h1>
         <img src={boardsPic} alt="Logo" width="600" />
       </div>
 
       <div className="card">
         <button onClick={() => navigate('/fresh')}style={{ marginLeft: "30px", backgroundColor: "blue", color: "white", padding: "5px 10px", border: "none", borderRadius: "5px"}}>
+          See Project
+        </button>
+      </div>
+
+      <div style={{ marginTop: "100px" }}>
+        <h1 style={{color: "green", fontSize: "50px" }}>Guitar Pre-Amp</h1>
+        <img src={prePic} alt="Logo" width="600" />
+      </div>
+
+      <div className="card">
+        <button onClick={() => navigate('/pre')}style={{ marginLeft: "30px", backgroundColor: "blue", color: "white", padding: "5px 10px", border: "none", borderRadius: "5px"}}>
           See Project
         </button>
       </div>
@@ -60,6 +73,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/fresh" element={<FreshPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/pre" element={<PrePage />} />
       </Routes>
     </BrowserRouter>
   );

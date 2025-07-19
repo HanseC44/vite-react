@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import bDegreePic from '../assets/bDegree.jpg';
 
 const AboutPage = () => {
   const navigate = useNavigate();
@@ -23,6 +24,11 @@ const AboutPage = () => {
         links, and other helpful resources to support both my own learning and that of others in the community. I welcome feedback and collaboration 
         as the project grows.
       </p>
+
+    <div style={{ marginTop: "100px" }}>
+      <img src={bDegreePic} alt="Logo" width="400" />
+    </div>
+
     </div>
     <div className="card">
       <button onClick={() => navigate('/')}style={{ marginLeft: "30px", backgroundColor: "blue", color: "white", padding: "5px 10px", border: "none", borderRadius: "5px"}}>
