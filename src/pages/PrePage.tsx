@@ -5,6 +5,7 @@ import wav1Pic from '../assets/wav1.png';
 import wav2Pic from '../assets/wav2.png';
 import wav3Pic from '../assets/wav3.png';
 import wav4Pic from '../assets/wav4.png';
+import prePCBPic from '../assets/prePCB.png';
 
 const PrePage = () => {
   const navigate = useNavigate();
@@ -30,13 +31,13 @@ const PrePage = () => {
     <div style={{ marginBottom: "100px" }}>
       <h1 style={{ fontSize: "20px", color: "green" }}>Output Wave</h1>
       <img src={wav2Pic} alt="Logo" width="800" />
-      <p>The output wave(blue) compared to the imput wave(red)</p>
+      <p>The output wave(blue) compared to the imput wave(red).</p>
     </div>
 
     <div style={{ marginBottom: "100px" }}>
       <h1 style={{ fontSize: "20px", color: "green" }}>Pre Amp Stage 2</h1>
       <img src={preStage2Pic} alt="Logo" width="800" />
-      <p>This is where the guitar the signal is amplified to a suitable level to pass onto a power amp. this stage also controls the volume of the overall circuit.</p>
+      <p>This is where the guitar signal is amplified to a suitable level to pass onto a power amp. this stage also controls the volume of the overall circuit.</p>
     </div>
 
     <div style={{ marginBottom: "100px" }}>
@@ -49,6 +50,12 @@ const PrePage = () => {
       <h1 style={{ fontSize: "20px", color: "green" }}>Output Wave</h1>
       <img src={wav4Pic} alt="Logo" width="800" />
       <p>The final output wave shown with significant clamping from the diode network</p>
+    </div>
+
+    <div style={{ marginBottom: "100px" }}>
+      <h1 style={{ fontSize: "20px", color: "green" }}>Pre PCB Layout</h1>
+      <img src={prePCBPic} alt="Logo" width="800" />
+      <p>This is the layout for the PCB made in KiCad. I will double check it and then submit the gerber file to JLPCB for fabrication in the next week.</p>
     </div>
 
     <div className="card">

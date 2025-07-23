@@ -43,6 +43,9 @@ const Home = () => {
       <div>
         <h1 style={{color: "green", fontSize: "50px" }}>E_Guitar</h1>
         <img src={boardsPic} alt="Logo" width="600" />
+        <p>This was my senior capstone project. It is essentially a stringless guitar that utilizes touch sensors for fret input. This project was for the most part, a sucess.
+          some more work needs to be done on the buffer to sense multiple touches at once.
+        </p>
       </div>
 
       <div className="card">
@@ -54,6 +57,7 @@ const Home = () => {
       <div style={{ marginTop: "100px" }}>
         <h1 style={{color: "green", fontSize: "50px" }}>Guitar Pre-Amp</h1>
         <img src={prePic} alt="Logo" width="600" />
+        <p>This circuit will be the pre-amp for a guitar amplfier. The above pictured PCB was my first attempt but the project will outline a begining to end new attempt.</p>
       </div>
 
       <div className="card">
