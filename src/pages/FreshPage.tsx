@@ -17,7 +17,7 @@ const FreshPage = () => {
       <h1 style={{ fontSize: "20px", color: "green" }}>MCU Top</h1>
       <img src={mcuTopPic} alt="Logo" width="800" />
       <p>The microcontroller being used is an STM32H723ZG. This shows the VDD_MCU connection, the clock, 
-         The ST-Link headers, The Dac pins and some of the GPIO pins used for touch sensing</p>
+         The ST-Link headers, The Dac pins and some of the GPIO pins used for touch sensing.</p>
     </div>
 
     <div style={{ marginBottom: "100px" }}>

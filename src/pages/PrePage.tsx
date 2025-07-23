@@ -13,7 +13,7 @@ const PrePage = () => {
   return (
     <>
     <div style={{ marginBottom: "100px" }}>
-      <h1>Circuit Design</h1>
+      <h1>Circuit Design:</h1>
     </div>
 
     <div style={{ marginBottom: "100px" }}>

@@ -7,6 +7,7 @@ import prePic from './assets/pre.jpg';
 import FreshPage from './pages/FreshPage';
 import AboutPage from './pages/AboutPage';
 import PrePage from './pages/PrePage';
+import PowerPage from './pages/PowerPage';
 import './App.css'
 
 function ScrollToTop() {
@@ -65,6 +66,19 @@ const Home = () => {
           See Project
         </button>
       </div>
+
+      <div style={{ marginTop: "100px" }}>
+        <h1 style={{color: "green", fontSize: "50px" }}>Guitar Power-Amp</h1>
+        <p>This circuit will be the power-amp for a guitar amplfier. So far, all I have done is found a power amp from Elliot Sounds and built it in Kicad. I had to write some spice models
+          for the TIP35C and TIP36C BJTs. Simulation was sucessfull and I am excited to explore this circuit more!
+        </p>
+      </div>
+
+      <div className="card">
+        <button onClick={() => navigate('/power')}style={{ marginLeft: "30px", backgroundColor: "blue", color: "white", padding: "5px 10px", border: "none", borderRadius: "5px"}}>
+          See Project
+        </button>
+      </div>
     </>
   )
 }
@@ -78,6 +92,7 @@ function App() {
         <Route path="/fresh" element={<FreshPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/pre" element={<PrePage />} />
+        <Route path="/power" element={<PowerPage />} />
       </Routes>
     </BrowserRouter>
   );
