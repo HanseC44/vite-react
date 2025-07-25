@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
-import introPic from './assets/SenProj.jpg';
+import introPic from './assets/SenProj.png';
 import boardsPic from './assets/boards.jpg';
 import mePic from './assets/me.jpg';
 import prePic from './assets/pre.jpg';
@@ -30,8 +30,7 @@ const Home = () => {
       </a>
       <div style={{ display: "flex", alignItems: "center", textAlign: "left" }}>
         <img src={mePic} alt="Logo" width="100" />
-        <p style={{ marginLeft: "50px" }}>    Kbarisland@gmail.com</p>
-        <button onClick={() => navigate('/about')}style={{ marginLeft: "300px", backgroundColor: "blue", color: "white", padding: "5px 10px", border: "none", borderRadius: "5px"}}>
+        <button onClick={() => navigate('/about')}style={{ marginLeft: "30px", backgroundColor: "blue", color: "white", padding: "5px 10px", border: "none", borderRadius: "5px"}}>
           About
         </button>
       </div>
